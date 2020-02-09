@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\B2RectangleNode.hpp" />
+    <ClInclude Include="Include\B2SpriteNode.hpp" />
+    <ClInclude Include="Include\B2WorldContactListener.hpp" />
+    <ClInclude Include="Include\Book\Aircraft.hpp" />
+    <ClInclude Include="Include\Book\Application.hpp" />
+    <ClInclude Include="Include\Book\Button.hpp" />
+    <ClInclude Include="Include\Book\Category.hpp" />
+    <ClInclude Include="Include\Book\Command.hpp" />
+    <ClInclude Include="Include\Book\CommandQueue.hpp" />
+    <ClInclude Include="Include\Book\Component.hpp" />
+    <ClInclude Include="Include\Book\Container.hpp" />
+    <ClInclude Include="Include\Book\Entity.hpp" />
+    <ClInclude Include="Include\Book\Foreach.hpp" />
+    <ClInclude Include="Include\Book\GameState.hpp" />
+    <ClInclude Include="Include\Book\Label.hpp" />
+    <ClInclude Include="Include\Book\LoadingState.hpp" />
+    <ClInclude Include="Include\Book\MenuState.hpp" />
+    <ClInclude Include="Include\Book\ParallelTask.hpp" />
+    <ClInclude Include="Include\Book\PauseState.hpp" />
+    <ClInclude Include="Include\Book\Player.hpp" />
+    <ClInclude Include="Include\Book\ResourceHolder.hpp" />
+    <ClInclude Include="Include\Book\ResourceIdentifiers.hpp" />
+    <ClInclude Include="Include\Book\SceneNode.hpp" />
+    <ClInclude Include="Include\Book\SettingsState.hpp" />
+    <ClInclude Include="Include\Book\SpriteNode.hpp" />
+    <ClInclude Include="Include\Book\State.hpp" />
+    <ClInclude Include="Include\Book\StateIdentifiers.hpp" />
+    <ClInclude Include="Include\Book\StateStack.hpp" />
+    <ClInclude Include="Include\Book\TitleState.hpp" />
+    <ClInclude Include="Include\Book\Utility.hpp" />
+    <ClInclude Include="Include\Book\World.hpp" />
+    <ClInclude Include="Include\Bullet.hpp" />
+    <ClInclude Include="Include\Coin.hpp" />
+    <ClInclude Include="Include\EndState.hpp" />
+    <ClInclude Include="Include\GameOverState.hpp" />
+    <ClInclude Include="Include\Grenade.hpp" />
+    <ClInclude Include="Include\HealthPickup.hpp" />
+    <ClInclude Include="Include\Hero.hpp" />
+    <ClInclude Include="Include\InteractableObject.hpp" />
+    <ClInclude Include="Include\Snake.hpp" />
+    <ClInclude Include="Include\Tank.hpp" />
+    <ClInclude Include="Include\TankBullet.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Include\Book\ResourceHolder.inl" />
+    <None Include="Include\Book\Utility.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Aircraft.cpp" />
+    <ClCompile Include="Source\Application.cpp" />
+    <ClCompile Include="Source\B2RectangleNode.cpp" />
+    <ClCompile Include="Source\B2SpriteNode.cpp" />
+    <ClCompile Include="Source\B2WorldContactListener.cpp" />
+    <ClCompile Include="Source\Bullet.cpp" />
+    <ClCompile Include="Source\Button.cpp" />
+    <ClCompile Include="Source\Coin.cpp" />
+    <ClCompile Include="Source\Command.cpp" />
+    <ClCompile Include="Source\CommandQueue.cpp" />
+    <ClCompile Include="Source\Component.cpp" />
+    <ClCompile Include="Source\Container.cpp" />
+    <ClCompile Include="Source\EndState.cpp" />
+    <ClCompile Include="Source\Entity.cpp" />
+    <ClCompile Include="Source\GameOverState.cpp" />
+    <ClCompile Include="Source\GameState.cpp" />
+    <ClCompile Include="Source\Grenade.cpp" />
+    <ClCompile Include="Source\HealthPickup.cpp" />
+    <ClCompile Include="Source\Hero.cpp" />
+    <ClCompile Include="Source\InteractableObject.cpp" />
+    <ClCompile Include="Source\Label.cpp" />
+    <ClCompile Include="Source\LoadingState.cpp" />
+    <ClCompile Include="Source\Main.cpp" />
+    <ClCompile Include="Source\MenuState.cpp" />
+    <ClCompile Include="Source\ParallelTask.cpp" />
+    <ClCompile Include="Source\PauseState.cpp" />
+    <ClCompile Include="Source\Player.cpp" />
+    <ClCompile Include="Source\SceneNode.cpp" />
+    <ClCompile Include="Source\SettingsState.cpp" />
+    <ClCompile Include="Source\Snake.cpp" />
+    <ClCompile Include="Source\SpriteNode.cpp" />
+    <ClCompile Include="Source\State.cpp" />
+    <ClCompile Include="Source\StateStack.cpp" />
+    <ClCompile Include="Source\Tank.cpp" />
+    <ClCompile Include="Source\TankBullet.cpp" />
+    <ClCompile Include="Source\TitleState.cpp" />
+    <ClCompile Include="Source\Utility.cpp" />
+    <ClCompile Include="Source\World.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{090469AA-817E-44DB-980D-6D30ECDF1452}</ProjectGuid>
+    <RootNamespace>Exercise3</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(SolutionDir)..\SFML-VS2017\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib;$(SolutionDir)..\SFML-VS2017\lib\Debug</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-window-d.lib;sfml-graphics-d.lib;sfml-system-d.lib;Box2D.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
